@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J7b-i2-6ra">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="quy-vl-OcW">
+            <objects>
+                <viewController id="J7b-i2-6ra" customClass="ViewController" customModule="Workspace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3TR-mE-X6A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ski-Lh-7M6" customClass="CurvedNavigationBar" customModule="Workspace" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="fw0-eb-ET5"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-4T-geo">
+                                <rect key="frame" x="196" y="470" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeSize:" destination="J7b-i2-6ra" eventType="touchUpInside" id="chp-9i-x1d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ski-Lh-7M6" firstAttribute="top" secondItem="1Vg-47-hQT" secondAttribute="top" id="I4Y-jD-inL"/>
+                            <constraint firstItem="ski-Lh-7M6" firstAttribute="leading" secondItem="1Vg-47-hQT" secondAttribute="leading" id="bfD-Mb-FMR"/>
+                            <constraint firstItem="ski-Lh-7M6" firstAttribute="trailing" secondItem="1Vg-47-hQT" secondAttribute="trailing" id="jWw-0R-ATC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Vg-47-hQT"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="ski-Lh-7M6" id="qjz-uX-22v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOm-JQ-RIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711.20000000000005" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>
